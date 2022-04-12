@@ -1,0 +1,180 @@
+{
+  "@context" : {
+    "has_character_name" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_character_name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Enemy_Character" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Enemy_Character"
+    },
+    "worker_in_series" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#worker_in_series",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Platform" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Platform"
+    },
+    "is_genre" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_genre",
+      "@type" : "@id"
+    },
+    "has_genre" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_genre",
+      "@type" : "@id"
+    },
+    "has_name" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "has_class" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class",
+      "@type" : "@id"
+    },
+    "Class" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class"
+    },
+    "Fighter" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fighter"
+    },
+    "Artificer" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Artificer"
+    },
+    "Bard" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Bard"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "is_class_type" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class_type",
+      "@type" : "@id"
+    },
+    "Rogue" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Rogue"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character"
+    },
+    "has_episodes" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_episodes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Composer" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Composer"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Person"
+    },
+    "has_property_explanation" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_property_explanation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "is_class" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "is_season" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_season",
+      "@type" : "@id"
+    },
+    "Barbarian" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Barbarian"
+    },
+    "has_class_type" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class_type",
+      "@type" : "@id"
+    },
+    "has_network_name" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_network_name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "Network" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Network"
+    },
+    "Ranger" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Ranger"
+    },
+    "belongs_to_platform" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#belongs_to_platform",
+      "@type" : "@id"
+    },
+    "is_humanoid_character" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_humanoid_character",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Wizard" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Wizard"
+    },
+    "Dubbing_Actor" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Dubbing_Actor"
+    },
+    "platform_has_series" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#platform_has_series",
+      "@type" : "@id"
+    },
+    "Sorcerer" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Sorcerer"
+    },
+    "Paladin" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Paladin"
+    },
+    "Author" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Author"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "Series" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series"
+    },
+    "Druid" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Druid"
+    },
+    "has_worker" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_worker",
+      "@type" : "@id"
+    },
+    "Cleric" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Cleric"
+    },
+    "has_season" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_season",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Genre" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Genre"
+    },
+    "Main_Character" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Main_Character"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Season"
+    },
+    "is_important_character" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_important_character",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Custom_Property" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Custom_Property"
+    },
+    "Eventual_Character" : {
+      "@id" : "http://www.semanticweb.org/linkfy/ontologies/vox-machina#Eventual_Character"
+    }
+  }
+}

@@ -1,0 +1,517 @@
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina> <http://purl.org/dc/elements/1.1/rights> <https://creativecommons.org/licenses/by/3.0/> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina> <http://www.w3.org/2000/01/rdf-schema#comment> "PAC2 Based on The Legend of Vox Machina.\n\nRepresentació del coneixement  - Universitat Oberta de Catalunya.\n\n\nStudent:  Antonio Cuenca Garcia"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/The_Legend_of_Vox_Machina"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#belongs_to_platform
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#belongs_to_platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#belongs_to_platform> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#platform_has_series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#belongs_to_platform> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#belongs_to_platform> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Platform> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#belongs_to_platform> <http://www.w3.org/2000/01/rdf-schema#comment> "A Serie is included to plaftorms" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#belongs_to_platform> <http://www.w3.org/2000/01/rdf-schema#label> "belongs_to_platform" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class> <http://www.w3.org/2000/01/rdf-schema#comment> "Class properties that will have a character" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class> <http://www.w3.org/2000/01/rdf-schema#label> "has_class_properties" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class_type
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class_type> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class_type> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class_type> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class_type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class_type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class_type> <http://www.w3.org/2000/01/rdf-schema#comment> "Defined when a chatacter has an assigned class" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class_type> <http://www.w3.org/2000/01/rdf-schema#label> "has_class_type" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_genre
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_genre> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_genre> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_genre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_genre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Genre> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_genre> <http://www.w3.org/2000/01/rdf-schema#comment> "Genre that defines the kind of Serie" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_genre> <http://www.w3.org/2000/01/rdf-schema#label> "has_genre" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_season
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_season> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_season> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_season> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_season> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Season> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_season> <http://www.w3.org/2000/01/rdf-schema#comment> "Season that is included into a Serie" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_season> <http://www.w3.org/2000/01/rdf-schema#label> "has_season" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_worker
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_worker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_worker> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_worker> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#worker_in_series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_worker> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_worker> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Person> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_worker> <http://www.w3.org/2000/01/rdf-schema#comment> "A worker that belongs to a serie" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_worker> <http://www.w3.org/2000/01/rdf-schema#label> "has_worker" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class> <http://www.w3.org/2000/01/rdf-schema#comment> "Class property that is included by a class type" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class> <http://www.w3.org/2000/01/rdf-schema#label> "is_class_property" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class_type
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class_type> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class_type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class_type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class_type> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of has_class_type" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class_type> <http://www.w3.org/2000/01/rdf-schema#label> "is_class_type" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_genre
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_genre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Genre> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_genre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_genre> <http://www.w3.org/2000/01/rdf-schema#comment> "Kind of Genre that is associated to a serie" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_genre> <http://www.w3.org/2000/01/rdf-schema#label> "is_genre" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_season
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_season> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Season> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_season> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_season> <http://www.w3.org/2000/01/rdf-schema#comment> "Season associated to a chapter" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_season> <http://www.w3.org/2000/01/rdf-schema#label> "is_season" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#platform_has_series
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#platform_has_series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#platform_has_series> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#platform_has_series> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Platform> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#platform_has_series> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#platform_has_series> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of belongs_to_platform" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#platform_has_series> <http://www.w3.org/2000/01/rdf-schema#label> "platform_has_series" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#worker_in_series
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#worker_in_series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#worker_in_series> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#worker_in_series> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Person> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#worker_in_series> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#worker_in_series> <http://www.w3.org/2000/01/rdf-schema#comment> "inverse of has_worker" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#worker_in_series> <http://www.w3.org/2000/01/rdf-schema#label> "worker_in_series" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_character_name
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_character_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_character_name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_character_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_character_name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the character" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_character_name> <http://www.w3.org/2000/01/rdf-schema#label> "has_character_name" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_episodes
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_episodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_episodes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Season> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_episodes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_episodes> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of episodes included on the Season" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_episodes> <http://www.w3.org/2000/01/rdf-schema#label> "has_episodes" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_name
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Dubbing_Actor> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the actor who dubs a character" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_name> <http://www.w3.org/2000/01/rdf-schema#label> "has_dubbing_name" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_network_name
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_network_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_network_name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Network> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_network_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_network_name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a network server" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_network_name> <http://www.w3.org/2000/01/rdf-schema#label> "has_network_name" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_property_explanation
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_property_explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_property_explanation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Custom_Property> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_property_explanation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_property_explanation> <http://www.w3.org/2000/01/rdf-schema#comment> "Explains the unique property that a class or character has" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_property_explanation> <http://www.w3.org/2000/01/rdf-schema#label> "has_property_explanation" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_humanoid_character
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_humanoid_character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_humanoid_character> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_humanoid_character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_humanoid_character> <http://www.w3.org/2000/01/rdf-schema#comment> "Humanoid characters has relevant Actor Dubbers, actors without this property can be dubbed by Special effects" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_humanoid_character> <http://www.w3.org/2000/01/rdf-schema#label> "is_humanoid_character" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_important_character
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_important_character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_important_character> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_important_character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_important_character> <http://www.w3.org/2000/01/rdf-schema#comment> "Important characters has presence to the main Story" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_important_character> <http://www.w3.org/2000/01/rdf-schema#label> "is_important_character" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Artificer
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Artificer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Artificer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Artificer> <http://www.w3.org/2000/01/rdf-schema#comment> "The Artificer is a class with a tool for every job and a solution to every problem. They excel as a Support character."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Artificer> <http://www.w3.org/2000/01/rdf-schema#label> "Artificer"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Author
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Author> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Person> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Author> <http://www.w3.org/2000/01/rdf-schema#comment> "An Author is the creator of the Serie"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Author> <http://www.w3.org/2000/01/rdf-schema#label> "Author"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Barbarian
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Barbarian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Barbarian> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Barbarian> <http://www.w3.org/2000/01/rdf-schema#comment> "A barbarian is someone who is perceived to be either uncivilized or primitive."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Barbarian> <http://www.w3.org/2000/01/rdf-schema#label> "Barbarian"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Bard
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Bard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Bard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Bard> <http://www.w3.org/2000/01/rdf-schema#comment> "Bard is an ethereal Celestial being who created a corporeal form in order to traverse and interact with the physical world."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Bard> <http://www.w3.org/2000/01/rdf-schema#label> "Bard"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_humanoid_character> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_important_character> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "A Character is a role in the series which is represented by an animated cartoon"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Person> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> <http://www.w3.org/2000/01/rdf-schema#comment> "Class is an abstract class wich represents the kind of Human Being that represents a character"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> <http://www.w3.org/2000/01/rdf-schema#label> "Class"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Cleric
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Cleric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Cleric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Cleric> <http://www.w3.org/2000/01/rdf-schema#comment> "The cleric is a healer, usually a priest and a holy warrior"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Cleric> <http://www.w3.org/2000/01/rdf-schema#label> "Cleric"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Composer
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Composer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Composer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Person> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Composer> <http://www.w3.org/2000/01/rdf-schema#comment> "A composer is the person who creates the melodics of the Serie"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Composer> <http://www.w3.org/2000/01/rdf-schema#label> "Composer"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Custom_Property
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Custom_Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Custom_Property> <http://www.w3.org/2000/01/rdf-schema#comment> "A custom property that will be added as an individual fact to a Character of any class" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Custom_Property> <http://www.w3.org/2000/01/rdf-schema#label> "Class_Property" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Druid
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Druid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Druid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Druid> <http://www.w3.org/2000/01/rdf-schema#comment> "Unlike clerics, druids do not have special powers against undead"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Druid> <http://www.w3.org/2000/01/rdf-schema#label> "Druid"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Dubbing_Actor
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Dubbing_Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Dubbing_Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Person> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Dubbing_Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "A Dubbing Actor is a kind of Person who puts the voice to one of the animated Characters"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Dubbing_Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Dubbing_Actor"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Enemy_Character
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Enemy_Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Enemy_Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Enemy_Character> <http://www.w3.org/2000/01/rdf-schema#comment> "An enemy character is one of the animated characters who represents an action event on part of the seasons and has relevant importance againts the main characters."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Enemy_Character> <http://www.w3.org/2000/01/rdf-schema#label> "Enemy_Character"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Eventual_Character
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Eventual_Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Eventual_Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Eventual_Character> <http://www.w3.org/2000/01/rdf-schema#comment> "An eventual character is one of the characters who add events and action to the serie but is not mainly seen on the scenes"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Eventual_Character> <http://www.w3.org/2000/01/rdf-schema#label> "Eventual_Character"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fighter
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fighter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fighter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fighter> <http://www.w3.org/2000/01/rdf-schema#comment> "A fighter is a versatile, weapons-oriented warrior who fights using skill, strategy and tactics."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fighter> <http://www.w3.org/2000/01/rdf-schema#label> "Fighter"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Genre
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Genre> <http://www.w3.org/2000/01/rdf-schema#comment> "As a serie, the type of content referred is determined as a Genre"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Genre> <http://www.w3.org/2000/01/rdf-schema#label> "Genre"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Main_Character
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Main_Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Main_Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Main_Character> <http://www.w3.org/2000/01/rdf-schema#comment> "A main character is one of the characters who acts majorly on the episodes"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Main_Character> <http://www.w3.org/2000/01/rdf-schema#label> "Main_Character"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Network
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Network> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Network> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Platform> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Network> <http://www.w3.org/2000/01/rdf-schema#comment> "A Network is a king of Platform runing as a Network Online Server where TV shows are streamed."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Network> <http://www.w3.org/2000/01/rdf-schema#label> "Network"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Paladin
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Paladin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Paladin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Paladin> <http://www.w3.org/2000/01/rdf-schema#comment> "The paladin is a holy knight, crusading in the name of good and order, and is a divine spellcaster."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Paladin> <http://www.w3.org/2000/01/rdf-schema#label> "Paladin"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Person
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Person is an abstract class which represents a physical human."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Platform
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Platform> <http://www.w3.org/2000/01/rdf-schema#comment> "A platform is a place where a serie is broadcasted."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Platform> <http://www.w3.org/2000/01/rdf-schema#label> "Platform"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Ranger
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Ranger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Ranger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Ranger> <http://www.w3.org/2000/01/rdf-schema#comment> "A Ranger is an archetype found in many fantasy fiction and role-playing games. Rangers are usually associated with the wisdom of nature."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Ranger> <http://www.w3.org/2000/01/rdf-schema#label> "Ranger"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Rogue
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Rogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Rogue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Rogue> <http://www.w3.org/2000/01/rdf-schema#comment> "Lethal assassins and masters of stealth"@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Rogue> <http://www.w3.org/2000/01/rdf-schema#label> "Rogue"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Season
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Season> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes a season of a serie" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Season> <http://www.w3.org/2000/01/rdf-schema#label> "Season"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> <http://www.w3.org/2000/01/rdf-schema#comment> "A series is a work that involve a set of video, technology, audiovisuals, actors, and different supports, creating the main ontology of the project."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> <http://www.w3.org/2000/01/rdf-schema#label> "Series"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Sorcerer
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Sorcerer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Sorcerer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Sorcerer> <http://www.w3.org/2000/01/rdf-schema#comment> "A sorcerer is weak in melee combat, but a master of arcane magic, generally the most powerful form of D&D magic."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Sorcerer> <http://www.w3.org/2000/01/rdf-schema#label> "Sorcerer"@en .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Wizard
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Wizard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Wizard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Wizard> <http://www.w3.org/2000/01/rdf-schema#comment> "A wizard uses arcane magic, and is considered less effective in melee combat than other classes."@en .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Wizard> <http://www.w3.org/2000/01/rdf-schema#label> "Wizard"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Amazon
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Amazon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Amazon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Network> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Amazon> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_network_name> "Amazon Prime" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fantasy
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fantasy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fantasy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Genre> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fantasy> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_genre> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fantasy> .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Grog_Strongjaw
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Grog_Strongjaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Grog_Strongjaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Barbarian> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Grog_Strongjaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Main_Character> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Grog_Strongjaw> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Subliminal_Force> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Grog_Strongjaw> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_character_name> "Grog Strongjaw" .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Grog_Strongjaw> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_humanoid_character> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Grog_Strongjaw> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_important_character> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Laura_Bailey
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Laura_Bailey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Laura_Bailey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Dubbing_Actor> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Laura_Bailey> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_name> "Laura Bailey" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Subliminal_Force
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Subliminal_Force> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Subliminal_Force> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Custom_Property> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Subliminal_Force> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Grog_Strongjaw> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Subliminal_Force> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_property_explanation> "A subliminal force added to the carrier" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#The_Legend_Of_Vox_Machina
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#The_Legend_Of_Vox_Machina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#The_Legend_Of_Vox_Machina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#The_Legend_Of_Vox_Machina> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#belongs_to_platform> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Amazon> .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#Travis_Willingham
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Travis_Willingham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Travis_Willingham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Dubbing_Actor> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#Travis_Willingham> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_name> "Travis Willingham" .
+# 
+# http://www.semanticweb.org/linkfy/ontologies/vox-machina#season01
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#season01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#season01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Season> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#season01> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_genre> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fantasy> .
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina#season01> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_episodes> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid3 <http://www.w3.org/2002/07/owl#members> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Platform> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Genre> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#v> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid14 <http://www.w3.org/2003/11/swrl#body> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#arguments> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#b> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#b> .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid20 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_episodes> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid14 <http://www.w3.org/2003/11/swrl#head> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid22 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Season> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid23 <http://www.w3.org/2003/11/swrl#body> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#arguments> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#v> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#v> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_humanoid_character> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/2003/11/swrl#head> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid7 <http://www.w3.org/2003/11/swrl#body> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#b> .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid9 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_property_explanation> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid11 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Custom_Property> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid7 <http://www.w3.org/2003/11/swrl#head> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid13 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

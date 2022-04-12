@@ -1,0 +1,554 @@
+@prefix : <http://www.semanticweb.org/linkfy/ontologies/vox-machina#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/linkfy/ontologies/vox-machina#> .
+
+<http://www.semanticweb.org/linkfy/ontologies/vox-machina> rdf:type owl:Ontology ;
+                                                            <http://purl.org/dc/elements/1.1/rights> <https://creativecommons.org/licenses/by/3.0/> ;
+                                                            rdfs:comment """PAC2 Based on The Legend of Vox Machina.
+
+Representació del coneixement  - Universitat Oberta de Catalunya.
+
+
+Student:  Antonio Cuenca Garcia"""@en ;
+                                                            rdfs:seeAlso "https://en.wikipedia.org/wiki/The_Legend_of_Vox_Machina"@en ;
+                                                            owl:versionInfo "1.0"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#belongs_to_platform
+:belongs_to_platform rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :platform_has_series ;
+                     rdfs:domain :Series ;
+                     rdfs:range :Platform ;
+                     rdfs:comment "A Serie is included to plaftorms" ;
+                     rdfs:label "belongs_to_platform" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class
+:has_class rdf:type owl:ObjectProperty ;
+           owl:inverseOf :is_class ;
+           rdfs:domain :Series ;
+           rdfs:range :Character ;
+           rdfs:comment "Class properties that will have a character" ;
+           rdfs:label "has_class_properties" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_class_type
+:has_class_type rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                owl:inverseOf :is_class_type ;
+                rdfs:domain :Class ;
+                rdfs:range :Character ;
+                rdfs:comment "Defined when a chatacter has an assigned class" ;
+                rdfs:label "has_class_type" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_genre
+:has_genre rdf:type owl:ObjectProperty ;
+           owl:inverseOf :is_genre ;
+           rdfs:domain :Series ;
+           rdfs:range :Genre ;
+           rdfs:comment "Genre that defines the kind of Serie" ;
+           rdfs:label "has_genre" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_season
+:has_season rdf:type owl:ObjectProperty ;
+            owl:inverseOf :is_season ;
+            rdfs:domain :Series ;
+            rdfs:range :Season ;
+            rdfs:comment "Season that is included into a Serie" ;
+            rdfs:label "has_season" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_worker
+:has_worker rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            owl:inverseOf :worker_in_series ;
+            rdfs:domain :Series ;
+            rdfs:range :Person ;
+            rdfs:comment "A worker that belongs to a serie" ;
+            rdfs:label "has_worker" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class
+:is_class rdf:type owl:ObjectProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :Series ;
+          rdfs:comment "Class property that is included by a class type" ;
+          rdfs:label "is_class_property" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_class_type
+:is_class_type rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :Character ;
+               rdfs:range :Class ;
+               rdfs:comment "Inverse of has_class_type" ;
+               rdfs:label "is_class_type" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_genre
+:is_genre rdf:type owl:ObjectProperty ;
+          rdfs:domain :Genre ;
+          rdfs:range :Series ;
+          rdfs:comment "Kind of Genre that is associated to a serie" ;
+          rdfs:label "is_genre" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_season
+:is_season rdf:type owl:ObjectProperty ;
+           rdfs:domain :Season ;
+           rdfs:range :Series ;
+           rdfs:comment "Season associated to a chapter" ;
+           rdfs:label "is_season" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#platform_has_series
+:platform_has_series rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain :Platform ;
+                     rdfs:range :Series ;
+                     rdfs:comment "Inverse of belongs_to_platform" ;
+                     rdfs:label "platform_has_series" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#worker_in_series
+:worker_in_series rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :Person ;
+                  rdfs:range :Series ;
+                  rdfs:comment "inverse of has_worker" ;
+                  rdfs:label "worker_in_series" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_character_name
+:has_character_name rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Character ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "The name of the character" ;
+                    rdfs:label "has_character_name" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_episodes
+:has_episodes rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Season ;
+              rdfs:range xsd:integer ;
+              rdfs:comment "The number of episodes included on the Season" ;
+              rdfs:label "has_episodes" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_name
+:has_name rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Dubbing_Actor ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The name of the actor who dubs a character" ;
+          rdfs:label "has_dubbing_name" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_network_name
+:has_network_name rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Network ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Name of a network server" ;
+                  rdfs:label "has_network_name" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#has_property_explanation
+:has_property_explanation rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Custom_Property ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "Explains the unique property that a class or character has" ;
+                          rdfs:label "has_property_explanation" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_humanoid_character
+:is_humanoid_character rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Character ;
+                       rdfs:range xsd:boolean ;
+                       rdfs:comment "Humanoid characters has relevant Actor Dubbers, actors without this property can be dubbed by Special effects" ;
+                       rdfs:label "is_humanoid_character" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#is_important_character
+:is_important_character rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Character ;
+                        rdfs:range xsd:boolean ;
+                        rdfs:comment "Important characters has presence to the main Story" ;
+                        rdfs:label "is_important_character" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Artificer
+:Artificer rdf:type owl:Class ;
+           rdfs:subClassOf :Class ;
+           rdfs:comment "The Artificer is a class with a tool for every job and a solution to every problem. They excel as a Support character."@en ;
+           rdfs:label "Artificer"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Author
+:Author rdf:type owl:Class ;
+        rdfs:subClassOf :Person ;
+        rdfs:comment "An Author is the creator of the Serie"@en ;
+        rdfs:label "Author"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Barbarian
+:Barbarian rdf:type owl:Class ;
+           rdfs:subClassOf :Class ;
+           rdfs:comment "A barbarian is someone who is perceived to be either uncivilized or primitive."@en ;
+           rdfs:label "Barbarian"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Bard
+:Bard rdf:type owl:Class ;
+      rdfs:subClassOf :Class ;
+      rdfs:comment "Bard is an ethereal Celestial being who created a corporeal form in order to traverse and interact with the physical world."@en ;
+      rdfs:label "Bard"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :is_humanoid_character ;
+                             owl:someValuesFrom xsd:boolean
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :is_important_character ;
+                             owl:someValuesFrom xsd:boolean
+                           ] ;
+           rdfs:comment "A Character is a role in the series which is represented by an animated cartoon"@en ;
+           rdfs:label "Character"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Class
+:Class rdf:type owl:Class ;
+       owl:disjointWith :Person ;
+       rdfs:comment "Class is an abstract class wich represents the kind of Human Being that represents a character"@en ;
+       rdfs:label "Class"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Cleric
+:Cleric rdf:type owl:Class ;
+        rdfs:subClassOf :Class ;
+        rdfs:comment "The cleric is a healer, usually a priest and a holy warrior"@en ;
+        rdfs:label "Cleric"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Composer
+:Composer rdf:type owl:Class ;
+          rdfs:subClassOf :Person ;
+          rdfs:comment "A composer is the person who creates the melodics of the Serie"@en ;
+          rdfs:label "Composer"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Custom_Property
+:Custom_Property rdf:type owl:Class ;
+                 rdfs:comment "A custom property that will be added as an individual fact to a Character of any class" ;
+                 rdfs:label "Class_Property" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Druid
+:Druid rdf:type owl:Class ;
+       rdfs:subClassOf :Class ;
+       rdfs:comment "Unlike clerics, druids do not have special powers against undead"@en ;
+       rdfs:label "Druid"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Dubbing_Actor
+:Dubbing_Actor rdf:type owl:Class ;
+               rdfs:subClassOf :Person ;
+               rdfs:comment "A Dubbing Actor is a kind of Person who puts the voice to one of the animated Characters"@en ;
+               rdfs:label "Dubbing_Actor"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Enemy_Character
+:Enemy_Character rdf:type owl:Class ;
+                 rdfs:subClassOf :Character ;
+                 rdfs:comment "An enemy character is one of the animated characters who represents an action event on part of the seasons and has relevant importance againts the main characters."@en ;
+                 rdfs:label "Enemy_Character"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Eventual_Character
+:Eventual_Character rdf:type owl:Class ;
+                    rdfs:subClassOf :Character ;
+                    rdfs:comment "An eventual character is one of the characters who add events and action to the serie but is not mainly seen on the scenes"@en ;
+                    rdfs:label "Eventual_Character"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fighter
+:Fighter rdf:type owl:Class ;
+         rdfs:subClassOf :Class ;
+         rdfs:comment "A fighter is a versatile, weapons-oriented warrior who fights using skill, strategy and tactics."@en ;
+         rdfs:label "Fighter"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Genre
+:Genre rdf:type owl:Class ;
+       rdfs:comment "As a serie, the type of content referred is determined as a Genre"@en ;
+       rdfs:label "Genre"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Main_Character
+:Main_Character rdf:type owl:Class ;
+                rdfs:subClassOf :Character ;
+                rdfs:comment "A main character is one of the characters who acts majorly on the episodes"@en ;
+                rdfs:label "Main_Character"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Network
+:Network rdf:type owl:Class ;
+         rdfs:subClassOf :Platform ;
+         rdfs:comment "A Network is a king of Platform runing as a Network Online Server where TV shows are streamed."@en ;
+         rdfs:label "Network"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Paladin
+:Paladin rdf:type owl:Class ;
+         rdfs:subClassOf :Class ;
+         rdfs:comment "The paladin is a holy knight, crusading in the name of good and order, and is a divine spellcaster."@en ;
+         rdfs:label "Paladin"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "Person is an abstract class which represents a physical human."@en ;
+        rdfs:label "Person"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Platform
+:Platform rdf:type owl:Class ;
+          rdfs:comment "A platform is a place where a serie is broadcasted."@en ;
+          rdfs:label "Platform"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Ranger
+:Ranger rdf:type owl:Class ;
+        rdfs:subClassOf :Class ;
+        rdfs:comment "A Ranger is an archetype found in many fantasy fiction and role-playing games. Rangers are usually associated with the wisdom of nature."@en ;
+        rdfs:label "Ranger"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Rogue
+:Rogue rdf:type owl:Class ;
+       rdfs:subClassOf :Class ;
+       rdfs:comment "Lethal assassins and masters of stealth"@en ;
+       rdfs:label "Rogue"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Season
+:Season rdf:type owl:Class ;
+        rdfs:comment "Describes a season of a serie" ;
+        rdfs:label "Season"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Series
+:Series rdf:type owl:Class ;
+        rdfs:comment "A series is a work that involve a set of video, technology, audiovisuals, actors, and different supports, creating the main ontology of the project."@en ;
+        rdfs:label "Series"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Sorcerer
+:Sorcerer rdf:type owl:Class ;
+          rdfs:subClassOf :Class ;
+          rdfs:comment "A sorcerer is weak in melee combat, but a master of arcane magic, generally the most powerful form of D&D magic."@en ;
+          rdfs:label "Sorcerer"@en .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Wizard
+:Wizard rdf:type owl:Class ;
+        rdfs:subClassOf :Class ;
+        rdfs:comment "A wizard uses arcane magic, and is considered less effective in melee combat than other classes."@en ;
+        rdfs:label "Wizard"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Amazon
+:Amazon rdf:type owl:NamedIndividual ,
+                 :Network ;
+        :has_network_name "Amazon Prime" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Fantasy
+:Fantasy rdf:type owl:NamedIndividual ,
+                  :Genre ;
+         :is_genre :Fantasy .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Grog_Strongjaw
+:Grog_Strongjaw rdf:type owl:NamedIndividual ,
+                         :Barbarian ,
+                         :Main_Character ;
+                :has_class :Subliminal_Force ;
+                :has_character_name "Grog Strongjaw" ;
+                :is_humanoid_character "true"^^xsd:boolean ;
+                :is_important_character "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Laura_Bailey
+:Laura_Bailey rdf:type owl:NamedIndividual ,
+                       :Dubbing_Actor ;
+              :has_name "Laura Bailey" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Subliminal_Force
+:Subliminal_Force rdf:type owl:NamedIndividual ,
+                           :Custom_Property ;
+                  :is_class :Grog_Strongjaw ;
+                  :has_property_explanation "A subliminal force added to the carrier" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#The_Legend_Of_Vox_Machina
+:The_Legend_Of_Vox_Machina rdf:type owl:NamedIndividual ,
+                                    :Series ;
+                           :belongs_to_platform :Amazon .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#Travis_Willingham
+:Travis_Willingham rdf:type owl:NamedIndividual ,
+                            :Dubbing_Actor ;
+                   :has_name "Travis Willingham" .
+
+
+###  http://www.semanticweb.org/linkfy/ontologies/vox-machina#season01
+:season01 rdf:type owl:NamedIndividual ,
+                   :Season ;
+          :has_genre :Fantasy ;
+          :has_episodes 12 .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Character
+                :Genre
+                :Platform
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#b> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#v> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_episodes ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#b>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <urn:swrl:var#b> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 0 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Season ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :is_humanoid_character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#v>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <urn:swrl:var#v> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 0 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Custom_Property ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_property_explanation ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#b>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
